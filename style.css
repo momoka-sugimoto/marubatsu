@@ -1,0 +1,96 @@
+/* 全体のスタイルをリセットする */
+* {
+    margin: 0; /* 外側余白を除去 */
+    padding: 0; /* 内側余白を除去 */
+
+    /* フォントを設定 */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #b97b2a;  /* 背景色 */
+    height:  100px;  /* 高さの設定 */
+    display: flex;  /* flexboxの設定 */
+    justify-content: center;  /*flex-itemの左右の並び位置を中央に */
+    align-items: center;  /* flex-itemの上下の並び位置を中央に */
+    color: #fff;
+}
+
+.playArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: calc(100vh - 150px);  /*高さを設定*/
+}
+
+.tool {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+#tool_nowPlayer {
+    background-color: #ffa01b;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#tool_resultText {
+    background-color: #ffb731;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #1cd1cb;
+    border-radius: 10px;
+}
+
+.tool_replayButton {
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 16px;
+    width: 70%;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #006662;
+}
+
+.tool_replayButton:hover {
+    background-color: #1b716e;
+    color: #fff;
+    border: 3px solid #ff950a;
+}
+
+.gameBoard {
+    border: 3px solid #fff;
+}
+
+.playArea_gameBoard-line {
+    display: flex;
+}
+
+.square {
+    text-align: center;
+    color: #fff;
+    background-color: #006662;
+    border: 3px solid #fff;
+    caret-color: transparent;
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #b97b2a;
+    color: #fff;
+}
